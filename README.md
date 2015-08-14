@@ -33,15 +33,19 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
     * Input: word="dog"; string="I love dogs."
     * Output: 0
 
-5. Only alphabetic letters are allowed in the word search box.
+5. Uppercase or lowercase letters do not matter.
+    * Input: word="DOGS"; string="I love dogs."
+    * Output: 1
+
+6. Only alphabetic letters are allowed in the word search box.
     * Input: "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "`" "~" "!" "@" "#" "$" "%" "^" "&" "*" "(" ")" "_" "+" "-" "=" "{" "}" "|" "\" ":" """ ";" "'" "<" ">" "?" "," "." "/"
     * Output: "Sorry, please only enter alphabetic words."
 
-6. If empty entry for the word search box, return "Please enter a word to search for."
+7. If empty entry for the word search box, return "Please enter a word to search for."
     * Input: "", "I love dogs."
     * Output: "Please enter a word to search for."
 
-7. If empty entry for the string search box, return "Please enter a line of words to search from."
+8. If empty entry for the string search box, return "Please enter a line of words to search from."
     * Input: "dog", ""
     * Output: "Please enter a line of words to search from."
 
