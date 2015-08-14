@@ -1,4 +1,4 @@
-# Count Repeats
+# Word Repeat Counter
 
 ##### A Silex app that displays how frequently a word appears in a given string. (8/14/2015)
 
