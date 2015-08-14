@@ -7,6 +7,13 @@
 ## Description
 Users input both the word and the string of words to check for the number of full word matches.
 
+## Setup
+* Open Terminal
+* Enter the web directory in count_repeat folder using terminal
+* Enter the following command into terminal 'php -S localhost:8000'
+* Open a web browser and type this into the address bar 'localhost:8000'
+* Requires Silex/Silex ~1.1 and Twig/Twig ~1.0 to be installed in the count_repeat project folder on the console by typing in "composer install" and then "composer update"
+
 ## Technologies Used
 
 PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
