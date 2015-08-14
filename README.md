@@ -13,19 +13,19 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
 
 ## Specs
 
-1. If user searchs for a word that matches the word in a one-word string, it should return 1 repeat.
+1. If user searches for a word that matches the word in a one-word string, it should return 1 repeat.
     * Input: word="dog"; string="dog"
     * Output: 1
 
-2. If user searchs for a word that does not match the word in a one word string, it should return 0 repeat.
+2. If user searches for a word that does not match the word in a one word string, it should return 0 repeat.
     * Input: word="dog"; string="cat"
     * Output: 0
 
-3. If user searchs for a word that match a word in a multi-word string once, it should return 1 repeat.
+3. If user searches for a word that match a word in a multi-word string once, it should return 1 repeat.
     * Input: word="dog"; string="I love dog."
     * Output: 1
 
-3. If user searchs for a word that does not fully match a word in a string, it should return 0 repeat.
+3. If user searches for a word that does not fully match a word in a string, it should return 0 repeat.
     * Input: word="dog"; string="I love dogs."
     * Output: 0
 
