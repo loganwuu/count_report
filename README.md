@@ -5,7 +5,7 @@
 #### By Logan Wu
 
 ## Description
-The user input both the word and the string of words to check and the app check for full word matches only.
+Users input both the word and the string of words to check and the app check for full word matches only.
 
 ## Technologies Used
 
@@ -13,53 +13,25 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
 
 ## Specs
 
-1. If user enters A, it should return score 1.
-  * Input: "A"
-  * Output: 1
+1. If user searchs for a word that matches the word in a one-word string, it should return 1 repeat.
+    * Input: word="dog"; string="dog"
+    * Output: 1
 
-2. If user enters A, E, I, O, U, L, N, R, S, or T, it should return score 1.
-  * Input: "E"
-  * Output: 1
+2. If user searchs for a word that does not match the word in a one word string, it should return 0 repeat.
+    * Input: word="dog"; string="cat"
+    * Output: 0
 
-3. If user enters D, or G, it should return score 2.
-  * Input: "D"
-  * Output: 2
+3. If user searchs for a word that match a word in a multi-word string once, it should return 1 repeat.
+    * Input: word="dog"; string="I love dog."
+    * Output: 1
 
-4. If user enters B, C, M, or P, it should return score 3.
-  * Input: "B"
-  * Output: 3
+3. If user searchs for a word that does not fully match a word in a string, it should return 0 repeat.
+    * Input: word="dog"; string="I love dogs."
+    * Output: 0
 
-5. If user enters F, H, V, W, or Y , it should return score 4.
-  * Input: "F"
-  * Output: 4
-
-6. If user enters K, it should return score 5.
-  * Input: "K"
-  * Output: 5
-
-7. If user enters J, or X, it should return score 8.
-  * Input: "J"
-  * Output: 8
-
-8. If user enters Q, or Z, it should return score 10.
-  * Input: "Q"
-  * Output: 10
-
-9. Convert to capitalized letters only
-  * Input: "a"
-  * Output: 1
-
-10. Allow multiple letters
-  * Input: "AEI"
-  * Output: 3
-
-11. Only alphabetic letters are allowed
-  * Input: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ` ~ ! @ # $ % ^ & * ( ) _ + - = { } | \ : " ; ' < > ? , . /
-  * Output: "Sorry, please only enter alphabetic letters."
-
-12. Only 7 or less letters are allowed
-  * Input: "ABCDEFGH"
-  * Output: "Sorry, please only enter 7 letters or less."
+4. Only alphabetic letters are allowed
+    * Input: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ` ~ ! @ # $ % ^ & * ( ) _ + - = { } | \ : " ; ' < > ? , . /
+    * Output: "Sorry, please only enter alphabetic words."
 
 ## Legal
 
