@@ -90,7 +90,7 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
-            $this->assertEquals("Sorry, please only enter one alphabetic word to search for without any space.", $result);
+            $this->assertEquals("Sorry, please only enter one word to search for without any space or non-alphabetic characters.", $result);
         }
 
         //For Spec #7
@@ -135,7 +135,7 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
-            $this->assertEquals("Please enter a word to search for and a line of words to search from.", $result);
+            $this->assertEquals("Please enter a word to search for and a paragraph to search from.", $result);
         }
     }
 ?>

@@ -5,14 +5,14 @@
         {
             //Allow only alphabetic letters to be searched
             if (empty($word) && empty($string)) {
-                return "Please enter a word to search for and a line of words to search from.";
+                return "Please enter a word to search for and a paragraph to search from.";
             } elseif (empty($word)) {
                 return "Please enter a word to search for.";
             } elseif (empty($string)) {
                 return "Please enter a paragraph to search from.";
             }
             elseif (!ctype_alpha($word)) {
-                return "Sorry, please only enter one alphabetic word to search for without any space.";
+                return "Sorry, please only enter one word to search for without any space or non-alphabetic characters.";
             }
 
             //Convert all letters to lowercase
@@ -29,7 +29,7 @@
             if ($lowercase_word == $lowercase_string_word) {
                 $counter++;
             }
-            
+
             //Output display message
             if ($counter <= 1) {
                 return "The word '$word' appears $counter time in '$string'.";
