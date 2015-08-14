@@ -135,7 +135,7 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
-            $this->assertEquals("Please enter a word to search for and a paragraph to search from.", $result);
+            $this->assertEquals("Please enter a word to search for and a paragraph to search it from.", $result);
         }
     }
 ?>

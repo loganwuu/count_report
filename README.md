@@ -45,9 +45,9 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
     * Input: word="dog", string=""
     * Output: "Please enter a paragraph to search from."
 
-9. If both fields are empty, return "Please enter a word to search for and a line of words to search from."
+9. If both fields are empty, return "Please enter a word to search for and a paragraph to search it from."
     * Input: word="", string=""
-    * Output: "Please enter a word to search for and a paragraph to search from."
+    * Output: "Please enter a word to search for and a paragraph to search it from."
 
 ## Legal
 

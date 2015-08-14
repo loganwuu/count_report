@@ -5,7 +5,7 @@
         {
             //Allow only alphabetic letters to be searched
             if (empty($word) && empty($string)) {
-                return "Please enter a word to search for and a paragraph to search from.";
+                return "Please enter a word to search for and a paragraph to it search from." ;
             } elseif (empty($word)) {
                 return "Please enter a word to search for.";
             } elseif (empty($string)) {
