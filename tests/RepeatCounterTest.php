@@ -60,7 +60,38 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
+            $this->assertEquals(2, $result);
+        }
+
+        //For Spec #5
+        function test_AllLowercase()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $word_input = "DOGS";
+            $string_input = "I love dogs";
+
+            //Act
+            $result = $test_countRepeats->countRepeats($word_input, $string_input);
+
+            //Assert
             $this->assertEquals(1, $result);
         }
+
+        //For Spec #6
+        function test_nonAlphabetsSearch()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $word_input = "//";
+            $string_input = "I love dogs";
+
+            //Act
+            $result = $test_countRepeats->countRepeats($word_input, $string_input);
+
+            //Assert
+            $this->assertEquals("Sorry, please only enter an alphabetic word.", $result);
+        }
+
     }
 ?>

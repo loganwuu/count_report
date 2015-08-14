@@ -33,7 +33,7 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
     * Input: word="dog"; string="I love dogs."
     * Output: 0
 
-5. Uppercase or lowercase letters do not matter.
+5. Uppercase or lowercase letters should not matter.
     * Input: word="DOGS"; string="I love dogs."
     * Output: 1
 
