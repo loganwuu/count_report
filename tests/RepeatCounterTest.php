@@ -15,7 +15,7 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals("The word 'dog' appears 1 time in 'dog'.", $result);
         }
 
         //For Spec #2
@@ -30,7 +30,7 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
-            $this->assertEquals(0, $result);
+            $this->assertEquals("The word 'dog' appears 0 time in 'cat'.", $result);
         }
 
         //For Spec #3
@@ -45,7 +45,7 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals("The word 'dogs' appears 1 time in 'I love dogs'.", $result);
         }
 
         //For Spec #4
@@ -60,7 +60,7 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
-            $this->assertEquals(2, $result);
+            $this->assertEquals("The word 'dog' appears 2 times in 'I love dog 1 and dog 2'.", $result);
         }
 
         //For Spec #5
@@ -75,7 +75,7 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
-            $this->assertEquals(1, $result);
+            $this->assertEquals("The word 'DOGS' appears 1 time in 'I love dogs'.", $result);
         }
 
         //For Spec #6
@@ -90,7 +90,7 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
-            $this->assertEquals("Sorry, please only enter an alphabetic word.", $result);
+            $this->assertEquals("Sorry, please only enter one alphabetic word to search for without any space.", $result);
         }
 
         //For Spec #7
@@ -120,7 +120,7 @@
             $result = $test_countRepeats->countRepeats($word_input, $string_input);
 
             //Assert
-            $this->assertEquals("Please enter a line of words to search from.", $result);
+            $this->assertEquals("Please enter a paragraph to search from.", $result);
         }
 
         //For Spec #9
