@@ -39,19 +39,19 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
 
 6. Only alphabetic letters are allowed in the word search box.
     * Input: "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "`", "~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+", "-", "=", "{", "}", "|", "\", ":", """, ";", "'", "<", ">", "?", ",", ".", "/"
-    * Output: "Sorry, please only enter alphabetic words."
+    * Output: "Sorry, please only enter one alphabetic word to search for without any space."
 
 7. If empty entry for the word search box, return "Please enter a word to search for."
     * Input: word=""; string="I love dogs."
     * Output: "Please enter a word to search for."
 
-8. If empty entry for the string search box, return "Please enter a line of words to search from."
+8. If empty entry for the string search box, return "Please enter a paragraph to search from."
     * Input: word="dog", string=""
     * Output: "Please enter a line of words to search from."
 
 9. If both fields are empty, return "Please enter a word to search for and a line of words to search from."
     * Input: word="", string=""
-    * Output: "Please enter a word to search for and a line of words to search from."
+    * Output: "Please enter a word to search for and a paragraph to search from."
 
 ## Legal
 

@@ -9,10 +9,10 @@
             } elseif (empty($word)) {
                 return "Please enter a word to search for.";
             } elseif (empty($string)) {
-                return "Please enter a line of words to search from.";
+                return "Please enter a paragraph to search from.";
             }
             elseif (!ctype_alpha($word)) {
-                return "Sorry, please only enter an alphabetic word to search for.";
+                return "Sorry, please only enter one alphabetic word to search for without any space.";
             }
 
             //Convert all letters to lowercase
