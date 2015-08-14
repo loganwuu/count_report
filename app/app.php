@@ -26,9 +26,7 @@
     $app->get("/view_count", function() use($app) {
         $my_RepeatCounter = new RepeatCounter;
         $repeat_number = $my_RepeatCounter->countRepeats($_GET['word'], $_GET['string']);
-        $word = $_GET['word'];
-        $string = $_GET['string'];
-        return $app['twig']->render('view_count.html.twig', array('result' => $repeat_number, 'word' => $word, 'string' => $string));
+        return $app['twig']->render('view_count.html.twig', array('result' => $repeat_number));
     });
 
     return $app;

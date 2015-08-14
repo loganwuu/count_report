@@ -29,7 +29,12 @@
             if ($lowercase_word == $lowercase_string_word) {
                 $counter++;
             }
-            return $counter;
+            //Output display message
+            if ($counter <= 1) {
+                return "The word $word appears $counter time in $string.";
+            } else {
+                return "The word $word appears $counter times in $string.";
+            }
         }
     }
 ?>
