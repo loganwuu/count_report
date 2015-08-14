@@ -4,7 +4,10 @@
         function countRepeats($word, $string)
         {
             //Allow only alphabetic letters to be searched
-            if (!ctype_alpha($word)) {
+            if (empty($word)) {
+                return "Please enter a word to search for.";
+            }
+            elseif (!ctype_alpha($word)) {
                 return "Sorry, please only enter an alphabetic word.";
             }
 

@@ -49,6 +49,10 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
     * Input: "dog", ""
     * Output: "Please enter a line of words to search from."
 
+9. If both fields are empty, return "Please enter a word to search for and a line of words to search from."
+    * Input: "", ""
+    * Output: "Please enter a word to search for and a line of words to search from."
+
 ## Legal
 
 Copyright (c) 2015 **Logan Wu**

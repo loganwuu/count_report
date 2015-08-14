@@ -93,5 +93,19 @@
             $this->assertEquals("Sorry, please only enter an alphabetic word.", $result);
         }
 
+        //For Spec #7
+        function test_emptyWordBox()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $word_input = "";
+            $string_input = "I love dogs";
+
+            //Act
+            $result = $test_countRepeats->countRepeats($word_input, $string_input);
+
+            //Assert
+            $this->assertEquals("Please enter a word to search for.", $result);
+        }
     }
 ?>
