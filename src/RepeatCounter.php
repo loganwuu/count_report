@@ -12,7 +12,7 @@
                 return "Please enter a line of words to search from.";
             }
             elseif (!ctype_alpha($word)) {
-                return "Sorry, please only enter an alphabetic word.";
+                return "Sorry, please only enter an alphabetic word to search for.";
             }
 
             //Convert all letters to lowercase
