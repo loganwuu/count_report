@@ -22,7 +22,7 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
     * Output: 0
 
 3. If user searches for a word that match a word in a multi-word string once, it should return 1 repeat.
-    * Input: word="dog"; string="I love dog."
+    * Input: word="dogs"; string="I love dogs."
     * Output: 1
 
 3. If user searches for a word that match a word in a multi-word string twice, it should return 2 repeat.
