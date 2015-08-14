@@ -1,8 +1,23 @@
 <html>
     <head>
-        <title></title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+        <title>Count Repeat</title>
     </head>
     <body>
-
+        <div class='container'>
+            <h1>Repeat Counter!</h1>
+            <div class="caption">
+                <p>how frequently a word appears in a given string.</p>
+            </div>
+            <form action='/view_count'>
+                <div class='form-group'>
+                  <label for='word'>Enter A Word:</label>
+                  <input id='word' name='word' class='form-control' type='text'>
+                  <label for='string'>Enter A Paragraph:</label>
+                  <input id='string' name='string' class='form-control' type='text'>
+                </div>
+                <button type='submit' class='btn btn-success'>Count</button>
+            </form>
+        </div>
     </body>
 </html>

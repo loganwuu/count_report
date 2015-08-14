@@ -5,7 +5,7 @@
 #### By Logan Wu
 
 ## Description
-Users input both the word and the string of words to check and the app check for full word matches only.
+Users input both the word and the string of words to check for the number of full word matches.
 
 ## Technologies Used
 
