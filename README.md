@@ -17,7 +17,7 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
     * Input: word="dog"; string="dog"
     * Output: 1
 
-2. If user searches for a word that does not match the word in a one word string, it should return 0 repeat.
+2. If user searches for a word that does not match the word in a one-word string, it should return 0 repeat.
     * Input: word="dog"; string="cat"
     * Output: 0
 
@@ -25,19 +25,23 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
     * Input: word="dog"; string="I love dog."
     * Output: 1
 
-3. If user searches for a word that does not fully match a word in a string, it should return 0 repeat.
+3. If user searches for a word that match a word in a multi-word string twice, it should return 2 repeat.
+    * Input: word="dog"; string="I love dog 1 and dog 2."
+    * Output: 2
+
+4. If user searches for a word that does not fully match a word in a string, it should return 0 repeat.
     * Input: word="dog"; string="I love dogs."
     * Output: 0
 
-4. Only alphabetic letters are allowed in the word search box.
+5. Only alphabetic letters are allowed in the word search box.
     * Input: "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "`" "~" "!" "@" "#" "$" "%" "^" "&" "*" "(" ")" "_" "+" "-" "=" "{" "}" "|" "\" ":" """ ";" "'" "<" ">" "?" "," "." "/"
     * Output: "Sorry, please only enter alphabetic words."
 
-5. If empty entry for the word search box, return "Please enter a word to search for."
+6. If empty entry for the word search box, return "Please enter a word to search for."
     * Input: "", "I love dogs."
     * Output: "Please enter a word to search for."
 
-6. If empty entry for the string search box, return "Please enter a line of words to search from."
+7. If empty entry for the string search box, return "Please enter a line of words to search from."
     * Input: "dog", ""
     * Output: "Please enter a line of words to search from."
 
